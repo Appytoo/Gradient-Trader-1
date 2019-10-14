@@ -1,6 +1,7 @@
 # Gradient-Trader
 A end to end   trading bot for cryptocurrency.
 
+![](https://cryptocurrencykb.com/wp-content/uploads/2019/05/Cryptocurrency-Wallpaper-1-1024x713.jpg)
 
 ## How to run
 ```javascript
