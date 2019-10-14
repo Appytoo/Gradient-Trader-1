@@ -5,6 +5,9 @@ A end to end   trading bot for cryptocurrency.
 ## How to run
 ```javascript
 
+git clone https://github.com/viditkhemka63/Gradient-Trader.git
+cd Gradient-Trader 
+
 npm install --only=production
 
 cd exchange
