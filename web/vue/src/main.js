@@ -8,6 +8,7 @@ import store from './store'
 
 import backtester from './components/backtester/backtester.vue'
 import home from './components/layout/home.vue'
+import sentiment from './components/sentiment/sentiment.vue'
 
 import data from './components/data/data.vue'
 import importer from './components/data/import/importer.vue'
@@ -19,12 +20,16 @@ import newGekko from './components/gekko/new.vue'
 import singleGekko from './components/gekko/singleGekko.vue'
 import { connect as connectWS } from './components/global/ws'
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 const router = new VueRouter({
   mode: 'hash',
   base: __dirname,
   routes: [
     { path: '/', redirect: '/home' },
     { path: '/home', component: home },
+    { path: '/sentiment', component: sentiment },
     { path: '/backtest', component: backtester },
     { path: '/config', component: config },
     { path: '/data', component: data },
@@ -38,6 +43,7 @@ const router = new VueRouter({
 
 // setup some stuff
 connectWS();
+Vue.use(VueAxios, axios)
 
 new Vue({
   router,

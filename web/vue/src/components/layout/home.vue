@@ -1,8 +1,8 @@
 <template lang='pug'>
   section.contain.grd-row
-    .grd-row-col-3-6(v-html='left')
-    .grd-row-col-3-6.txt--center
-      img(src='static/gekko.jpg')
+    .grd-row-col-2-8(v-html='left')
+    .grd-row-col-2-8.txt--center
+      img(src='https://cryptocurrencykb.com/wp-content/uploads/2019/05/Cryptocurrency-Wallpaper-1-1024x713.jpg')
       p
         em The most valuable commodity I know of is information.
 </template>
